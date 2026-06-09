@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mimo-v2-flash",
+    "name": "MiMo-V2-Flash",
+    "reasoning": true,
+    "notes": "Fast model. Thinking off by default (`thinking.type: disabled`). Returns `reasoning_content` when thinking enabled.",
+    "input": ["text"],
+    "cost": {
+      "input": 0.1,
+      "output": 0.3,
+      "cacheRead": 0.01,
+      "cacheWrite": 0
+    },
+    "contextWindow": 262144,
+    "maxTokens": 65536,
+    "compat": {
+      "supportsDeveloperRole": true,
+      "maxTokensField": "max_completion_tokens",
+      "thinkingFormat": "deepseek",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "supportsStore": false,
+      "supportsUsageInStreaming": true,
+      "supportsStrictMode": true
+    }
+  },
+  {
+    "id": "mimo-v2.5",
+    "name": "MiMo-V2.5",
+    "reasoning": true,
+    "notes": "Omni model (text + image). Thinking always on by default. Returns `reasoning_content`. Context: 1M, output: 128K.",
+    "input": ["text", "image"],
+    "cost": {
+      "input": 0.4,
+      "output": 2,
+      "cacheRead": 0.08,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "compat": {
+      "supportsDeveloperRole": true,
+      "maxTokensField": "max_completion_tokens",
+      "thinkingFormat": "deepseek",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "supportsStore": false,
+      "supportsUsageInStreaming": true,
+      "supportsStrictMode": true
+    }
+  },
+  {
+    "id": "mimo-v2.5-pro",
+    "name": "MiMo-V2.5-Pro",
+    "reasoning": true,
+    "notes": "Pro reasoning model. Thinking always on by default. Returns `reasoning_content`. Context: 1M, output: 128K.",
+    "input": ["text"],
+    "cost": {
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.2,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "compat": {
+      "supportsDeveloperRole": true,
+      "maxTokensField": "max_completion_tokens",
+      "thinkingFormat": "deepseek",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "supportsStore": false,
+      "supportsUsageInStreaming": true,
+      "supportsStrictMode": true
+    }
+  },
+  {
+    "id": "mimo-v2-pro",
+    "name": "MiMo-V2-Pro (Legacy)",
+    "reasoning": true,
+    "notes": "LEGACY — auto-routes to V2.5 after June 1 2026, fully deprecated June 30. Use `mimo-v2.5-pro` instead.",
+    "input": ["text"],
+    "cost": {
+      "input": 1,
+      "output": 3,
+      "cacheRead": 0.2,
+      "cacheWrite": 0
+    },
+    "contextWindow": 1048576,
+    "maxTokens": 131072,
+    "compat": {
+      "supportsDeveloperRole": true,
+      "maxTokensField": "max_completion_tokens",
+      "thinkingFormat": "deepseek",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "supportsStore": false,
+      "supportsUsageInStreaming": true,
+      "supportsStrictMode": true
+    }
+  },
+  {
+    "id": "mimo-v2-omni",
+    "name": "MiMo-V2-Omni (Legacy)",
+    "reasoning": true,
+    "notes": "LEGACY — auto-routes to V2.5 after June 1 2026, fully deprecated June 30. Use `mimo-v2.5` instead.",
+    "input": ["text", "image"],
+    "cost": {
+      "input": 0.4,
+      "output": 2,
+      "cacheRead": 0.08,
+      "cacheWrite": 0
+    },
+    "contextWindow": 262144,
+    "maxTokens": 131072,
+    "compat": {
+      "supportsDeveloperRole": true,
+      "maxTokensField": "max_completion_tokens",
+      "thinkingFormat": "deepseek",
+      "requiresReasoningContentOnAssistantMessages": true,
+      "supportsStore": false,
+      "supportsUsageInStreaming": true,
+      "supportsStrictMode": true
+    }
+  }
+]

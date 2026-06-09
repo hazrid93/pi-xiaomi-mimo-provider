@@ -1,0 +1,31 @@
+{
+  "name": "pi-xiaomi-mimo-provider",
+  "version": "1.0.0",
+  "description": "Xiaomi MiMo provider extension for pi - MiMo-V2.5-Pro, MiMo-V2.5, MiMo-V2-Flash with vLLM payload inspection hooks",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "echo 'nothing to clean'",
+    "build": "echo 'nothing to build'",
+    "check": "echo 'nothing to check'",
+    "test": "npx tsx test-reasoning.ts",
+    "update-models": "node update-models.mjs"
+  },
+  "keywords": [
+    "pi",
+    "extension",
+    "provider",
+    "xiaomi",
+    "mimo",
+    "ai",
+    "llm",
+    "reasoning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
