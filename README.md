@@ -6,6 +6,8 @@ _MiMo-V2.5-Pro, MiMo-V2.5, MiMo-V2-Flash — with DeepSeek-style thinking and mu
 
 📎 **[Architecture & Sequence Diagrams](docs/architecture.md)**
 
+📖 **[DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-xiaomi-mimo-provider?branch=main)**
+
 
 ## What This Plugin Does
 
