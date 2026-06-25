@@ -4,6 +4,9 @@
 
 _MiMo-V2.5-Pro, MiMo-V2.5, MiMo-V2-Flash — with DeepSeek-style thinking and multi-turn reasoning preservation for [pi](https://github.com/earendil-works/pi-coding-agent)._
 
+📎 **[Architecture & Sequence Diagrams](docs/architecture.md)**
+
+
 ## What This Plugin Does
 
 This is a **learning and reverse-engineering plugin** for understanding how Pi communicates with Xiaomi MiMo's OpenAI-compatible API.
